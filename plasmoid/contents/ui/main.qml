@@ -42,7 +42,7 @@ Item {
         id: monitorDataSource
         engine: "executable"
         connectedSources: []
-        interval: 60 * 1000
+        interval: 60 * 1000 * 60
         onNewData: function (cmd, data) {
             const exitCode = data["exit code"];
 			const exitStatus = data["exit status"];
